@@ -10,8 +10,8 @@ REset-BAse style. :kissing_closed_eyes:.
 ## 组件
 
 ### var.less
-颜色变量定义，常用的网站设计无非就是主色、副色、黑白灰，也许会有更复杂的，但这并不在reba-style的
-考虑范围之内，reba-style就是要做到极致的简洁，你可以自己尝试改写var.less中的色值，看看效果吧。
+颜色变量定义，常用的网站设计无非就是主色、副色、黑白灰，也许会有更复杂的，但这并不在
+reba-style的考虑范围之内，reba-style就是要做到极致的简洁，你可以自己尝试改写var.less中的色值，看看效果吧。
 
 ### utils.less
 从bootstrap中抽离出来处理常用兼容写法的less工具函数
