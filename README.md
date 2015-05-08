@@ -1,21 +1,23 @@
 # reba-style
-REset-BAse style
+reba 不是框架，只能算是笔者的一个工作总结。笔者发现，常见的网站设计中，只要拥有一个主色，网站的基本设计风格就能奠定，因此笔者整理了reba-style（REset BAse style）。
 
-轻量样式小库, 致力于一个目标：少代码，少配置，高效率，绝不写重复样式代码！
+## 步骤
 
-## 理念
-在日常前端开发工作中，样式的编写无疑占用很大的工作量，笔者整理这个小库的目的就是减少日常开发中重复的样式表编写，提高开发效率
+### 获得代码
 
-## 组件
+    bower install reba-style --save-dev
 
-### var.less
-颜色变量定义，常用的网站设计无非就是主色、副色、黑白灰，也许会有更复杂的，但这并不在reba-style的考虑范围之内，reba-style就是要做到极致的简洁，你可以自己尝试改写var.less中的色值，看看效果吧。
+在你的less代码中
 
-### utils.less
-从bootstrap中抽离出来处理常用兼容写法的less工具函数
+    @import "reba.less"
 
-### normalize.less
-在WEB前端中名声昭著的浏览器样式重置库
+### 定义你的主色
+在reba的源码中var.less里面只定义了四个色值变量，笔者发现一种颜色就可以奠定网站基调，你只需要定义你自己的`@main`变量即可。
 
-### btn.less
-在笔者的理解里，button控件的编写是日常前端开发中最最最最常见的控件，所以笔者整理出来了，reba-style不会像其他大而全的样式库来编写各种各样的可复用控件，争取尽量简单少量简洁
+你可以自己新建一个style.less，然后import reba，然后在自己的代码中覆写默认的 @main 即可，当然你也可以直接修改reba的var.less，详见源码 [example/reba-site/style.less](https://github.com/lpgray/reba-style/blob/master/examples/reba-site/style.less) 的写法。
+
+[示例网站](http://lpgray.github.io/reba-style/)
+
+### 只有按钮
+日常的网站开发需求中，各种视觉控件很难做到统一，但唯独按钮这个控件大部分场景下都差不多，因此笔者只整理了按钮这一个控件，你可以使用
+`class="btn"`来使用。

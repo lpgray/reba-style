@@ -13,15 +13,34 @@
     cursor: pointer;
     min-width: 10rem;
     margin: .5rem;
+    .transition(all .2s ease);
     &:active {
         background-color: darken(@main, 5%);
         border-color: darken(@main, 5%);
-        color: #fff;
+        color: @white;
     }
     &:hover {
         background-color: lighten(@main, 5%);
         border-color: lighten(@main, 5%);
-        color: #fff;
+        color: @white;
+    }
+}
+
+.btn-white {
+    background-color: @white;
+    border-color: @white;
+    color: @main;
+
+    &:active {
+        background-color: darken(@white, 5%);
+        border-color: darken(@white, 5%);
+        color: @main;
+    }
+
+    &:hover {
+        background-color: transparent;
+        border-color: @white;
+        color: @white;
     }
 }
 

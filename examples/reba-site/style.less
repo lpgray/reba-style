@@ -1,0 +1,63 @@
+@import "../../src/reba.less";
+
+@main: #43a0e2;
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.banner {
+    text-align: center;
+    padding: 120px 0;
+    background-color: @main;
+
+    h1 {
+        color: @white;
+        font-size: 4rem;
+    }
+
+    h2 {
+        color: @white;
+        font-size: 2
+    }
+}
+
+.features {
+    margin: 2rem auto;
+    text-align: center;
+
+    & > .container {
+        .clearfix;
+    }
+
+    .feature-item {
+        width: 33%;
+        float: left;
+        .box-sizing(border-box);
+        padding: 3rem 2rem;
+        overflow: hidden;
+    }
+
+    h1 {
+        color: @main;
+    }
+
+    p {
+        color: @gray;
+    }
+}
+
+.copy {
+    & > .container {
+        border-top: 1px solid #f3f3f3;
+    }
+    color: @gray;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    .feature-item {
+        display: block;
+    }
+}
