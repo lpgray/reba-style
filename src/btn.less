@@ -1,28 +1,30 @@
 .btn {
-    font-size: 1.5rem;
     display: inline-block;
-    padding: 1.2rem;
     text-decoration: none;
     text-align: center;
-    border-radius: 3px;
-    border: none;
+    font-size: 1.5rem;
+    padding: 1.2rem;
+    border-radius: 4px;
+    border: 1px solid @main;
     color: #fff;
     background-color: @main;
     .box-sizing(border-box);
     .user-select(none);
     cursor: pointer;
     min-width: 10rem;
+    margin: .5rem;
     &:active {
         background-color: darken(@main, 5%);
+        border-color: darken(@main, 5%);
         color: #fff;
     }
     &:hover {
         background-color: lighten(@main, 5%);
+        border-color: lighten(@main, 5%);
         color: #fff;
     }
 }
 
 .btn-block {
     display: block;
-    margin: 1rem;
 }

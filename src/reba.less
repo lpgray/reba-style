@@ -1,0 +1,18 @@
+@import "var.less";
+
+@import "utils.less";
+
+@import "normalize.less";
+
+@import "btn.less";
+
+a {
+    color: @main;
+    text-decoration: none;
+    &:hover {
+        color: lighten(@main, 5%);
+    }
+    &:active {
+        color: darken(@main, 5%);
+    }
+}

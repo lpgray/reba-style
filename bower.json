@@ -1,0 +1,23 @@
+{
+  "name": "reba-style",
+  "version": "1.0.0",
+  "homepage": "https://github.com/lpgray/reba-style",
+  "authors": [
+    "lpgray <px.zhangyang@gmail.com>"
+  ],
+  "description": "write a website easily.",
+  "keywords": [
+    "reba"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "less": "~2.5.0"
+  }
+}
