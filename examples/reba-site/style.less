@@ -9,7 +9,7 @@
 
 .banner {
     text-align: center;
-    padding: 120px 0;
+    padding: 120px 1rem;
     background-color: @main;
 
     h1 {
@@ -19,7 +19,8 @@
 
     h2 {
         color: @white;
-        font-size: 2
+        font-size: 2rem;
+        line-height: 3rem;
     }
 }
 
@@ -56,8 +57,11 @@
     text-align: center;
 }
 
-@media screen and (max-width: 480px) {
-    .feature-item {
+@media (max-width: 480px) {
+    .features .feature-item {
+        width: 90%;
         display: block;
+        float: none;
+        margin: 0 auto;
     }
 }

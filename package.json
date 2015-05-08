@@ -1,0 +1,12 @@
+{
+  "name": "reba-style",
+  "version": "1.0.0",
+  "description": "write a website easily.",
+  "author": "zhangyang",
+  "email": "px.zhangyang@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-less": "^3.0.3"
+  }
+}
