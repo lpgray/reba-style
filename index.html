@@ -1,71 +1,73 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Reba-style by lpgray</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="reba.css" media="screen">
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
   <body>
-    <section class="page-header">
-      <h1 class="project-name">Reba-style</h1>
-      <h2 class="project-tagline">REset-BAse style.</h2>
-      <a href="https://github.com/lpgray/reba-style" class="btn">View on GitHub</a>
-      <a href="https://github.com/lpgray/reba-style/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/lpgray/reba-style/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+    <div class="wrapper">
+      <header>
+        <h1>Reba-style</h1>
+        <p>REset-BAse style.</p>
 
-    <section class="main-content">
-      <h1>
+        <p class="view"><a href="https://github.com/lpgray/reba-style">View the Project on GitHub <small>lpgray/reba-style</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/lpgray/reba-style/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/lpgray/reba-style/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/lpgray/reba-style">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
 <a id="reba-style" class="anchor" href="#reba-style" aria-hidden="true"><span class="octicon octicon-link"></span></a>reba-style</h1>
 
-<p>REset-BAse style. <img class="emoji" title=":kissing_closed_eyes:" alt=":kissing_closed_eyes:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f61a.png" height="20" width="20" align="absmiddle">.</p>
-
-<p>轻量样式小库, 致力于一个目标：少代码，少配置，高效率，绝不写重复样式代码！</p>
+<p>reba 不是框架，只能算是笔者的一个工作总结。笔者发现，常见的网站设计中，只要拥有一个主色，网站的基本设计风格就能奠定，因此笔者整理了reba-style（REset BAse style）。</p>
 
 <h2>
-<a id="理念" class="anchor" href="#%E7%90%86%E5%BF%B5" aria-hidden="true"><span class="octicon octicon-link"></span></a>理念</h2>
-
-<p>在日常前端开发工作中，样式的编写无疑占用很大的工作量，笔者整理这个小库的目的就是减少日常开发中
-重复的样式表编写，提高开发效率</p>
-
-<h2>
-<a id="组件" class="anchor" href="#%E7%BB%84%E4%BB%B6" aria-hidden="true"><span class="octicon octicon-link"></span></a>组件</h2>
+<a id="步骤" class="anchor" href="#%E6%AD%A5%E9%AA%A4" aria-hidden="true"><span class="octicon octicon-link"></span></a>步骤</h2>
 
 <h3>
-<a id="varless" class="anchor" href="#varless" aria-hidden="true"><span class="octicon octicon-link"></span></a>var.less</h3>
+<a id="获得代码" class="anchor" href="#%E8%8E%B7%E5%BE%97%E4%BB%A3%E7%A0%81" aria-hidden="true"><span class="octicon octicon-link"></span></a>获得代码</h3>
 
-<p>颜色变量定义，常用的网站设计无非就是主色、副色、黑白灰，也许会有更复杂的，但这并不在reba-style的
-考虑范围之内，reba-style就是要做到极致的简洁，你可以自己尝试改写var.less中的色值，看看效果吧。</p>
+<pre><code>bower install reba-style --save-dev
+</code></pre>
 
-<h3>
-<a id="utilsless" class="anchor" href="#utilsless" aria-hidden="true"><span class="octicon octicon-link"></span></a>utils.less</h3>
+<p>在你的less代码中</p>
 
-<p>从bootstrap中抽离出来处理常用兼容写法的less工具函数</p>
-
-<h3>
-<a id="normalizecss" class="anchor" href="#normalizecss" aria-hidden="true"><span class="octicon octicon-link"></span></a>normalize.css</h3>
-
-<p>在WEB前端中名声昭著的浏览器样式重置库</p>
+<pre><code>@import "reba.less"
+</code></pre>
 
 <h3>
-<a id="btnless" class="anchor" href="#btnless" aria-hidden="true"><span class="octicon octicon-link"></span></a>btn.less</h3>
+<a id="定义你的主色" class="anchor" href="#%E5%AE%9A%E4%B9%89%E4%BD%A0%E7%9A%84%E4%B8%BB%E8%89%B2" aria-hidden="true"><span class="octicon octicon-link"></span></a>定义你的主色</h3>
 
-<p>在笔者的理解里，button控件的编写是日常前端开发中最最最最常见的控件，所以笔者整理出来了，
-reba-style不会像其他大而全的样式库来编写各种各样的可复用控件，争取尽量简单少量简洁</p>
+<p>在reba的源码中var.less里面只定义了四个色值变量，笔者发现一种颜色就可以奠定网站基调，你只需要定义你自己的<code>@main</code>变量即可。</p>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/lpgray/reba-style">Reba-style</a> is maintained by <a href="https://github.com/lpgray">lpgray</a>.</span>
+<p>你可以自己新建一个style.less，然后import reba，然后在自己的代码中覆写默认的 <a href="https://github.com/main" class="user-mention">@main</a> 即可，当然你也可以直接修改reba的var.less，详见源码 <a href="https://github.com/lpgray/reba-style/blob/master/examples/reba-site/style.less">example/reba-site/style.less</a> 的写法。</p>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+<p><a href="http://lpgray.github.io/reba-style/">示例网站</a></p>
+
+<h3>
+<a id="只有按钮" class="anchor" href="#%E5%8F%AA%E6%9C%89%E6%8C%89%E9%92%AE" aria-hidden="true"><span class="octicon octicon-link"></span></a>只有按钮</h3>
+
+<p>日常的网站开发需求中，各种视觉控件很难做到统一，但唯独按钮这个控件大部分场景下都差不多，因此笔者只整理了按钮这一个控件，你可以使用
+<code>class="btn"</code>来使用。</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/lpgray">lpgray</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
-
-    </section>
-
-
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
   </body>
 </html>
