@@ -9,7 +9,10 @@ reba 不是框架，只能算是笔者的一个工作总结。笔者发现，常
 
 在你的less代码中
 
-    @import "reba.less"
+    @import "bower_components/reba.less"
+
+    // 定义你的主色
+    @main: YOUR_COLOR
 
 ### 定义你的主色
 在reba的源码中var.less里面只定义了四个色值变量，笔者发现一种颜色就可以奠定网站基调，你只需要定义你自己的`@main`变量即可。
