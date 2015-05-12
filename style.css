@@ -27,7 +27,6 @@ html {
  */
 body {
   margin: 0;
-  font-size: 1.2rem;
   line-height: 2rem;
 }
 /* HTML5 display definitions
@@ -427,72 +426,4 @@ a:hover {
 }
 a:active {
   color: #2d95df;
-}
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-}
-.banner {
-  text-align: center;
-  padding: 120px 1rem;
-  background-color: #43a0e2;
-}
-.banner h1 {
-  color: white;
-  font-size: 4rem;
-}
-.banner h2 {
-  color: white;
-  font-size: 2rem;
-  line-height: 3rem;
-}
-.features {
-  margin: 2rem auto;
-  text-align: center;
-}
-.features > .container:before,
-.features > .container:after {
-  content: " ";
-  display: table;
-}
-.features > .container:after {
-  clear: both;
-}
-.features > .container:before,
-.features > .container:after {
-  content: " ";
-  display: table;
-}
-.features > .container:after {
-  clear: both;
-}
-.features .feature-item {
-  width: 33%;
-  float: left;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 3rem 2rem;
-  overflow: hidden;
-}
-.features h1 {
-  color: #43a0e2;
-}
-.features p {
-  color: gray;
-}
-.copy {
-  color: gray;
-  text-align: center;
-}
-.copy > .container {
-  border-top: 1px solid #f3f3f3;
-}
-@media (max-width: 480px) {
-  .features .feature-item {
-    width: 90%;
-    display: block;
-    float: none;
-    margin: 0 auto;
-  }
 }
