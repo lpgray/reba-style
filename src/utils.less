@@ -1,17 +1,14 @@
-/*
- * 此文件废弃，采用 post-css
- */
- .clearfix(){
-     &:before,
-     &:after {
-         content: " "; // 1
-         display: table; // 2
-     }
-     &:after {
-         clear: both;
-     }
- }
+.clearfix(){
+    &:before,
+    &:after {
+        content: " "; // 1
+        display: table; // 2
+    }
+    &:after {
+        clear: both;
+    }
+}
 
- .clearfix{
-     .clearfix();
- }
+.clearfix{
+    .clearfix();
+}
