@@ -8,8 +8,12 @@
  *    without disabling user zoom.
  */
 
+* {
+    box-sizing: border-box;
+}
+
 html {
-  font-family: sans-serif; /* 1 */
+  font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","STHeitiSC-Light","Microsoft YaHei","微软雅黑",Arial,sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
   font-size: 10px; // 基本字号, 便于计算
@@ -21,7 +25,8 @@ html {
 
 body {
   margin: 0;
-  line-height: 2rem; // 全局行高
+  font-size: 12px; // 全局字号
+  line-height: 1.4; // 全局行高
 }
 
 /* HTML5 display definitions

@@ -3,44 +3,40 @@
     text-decoration: none;
     text-align: center;
     font-size: 1.5rem;
-    padding: 1.2rem;
+    padding: 0 1.2rem;
     border-radius: 4px;
-    border: 1px solid @main;
     color: #fff;
-    background-color: @main;
-    .box-sizing(border-box);
-    .user-select(none);
     cursor: pointer;
     min-width: 10rem;
     margin: .5rem;
-    .transition(all .2s ease);
-    &:active {
-        background-color: darken(@main, 5%);
-        border-color: darken(@main, 5%);
-        color: @white;
-    }
+    line-height: 2.4;
+    border: 1px solid @main;
+    background-color: @main;
     &:hover {
         background-color: lighten(@main, 5%);
         border-color: lighten(@main, 5%);
+        color: @white;
+    }
+    &:active {
+        background-color: darken(@main, 5%);
+        border-color: darken(@main, 5%);
         color: @white;
     }
 }
 
 .btn-white {
     background-color: @white;
-    border-color: @white;
+    border-color: @main;
     color: @main;
-
+    &:hover {
+        background-color: transparent;
+        border-color: @main;
+        color: @main;
+    }
     &:active {
         background-color: darken(@white, 5%);
         border-color: darken(@white, 5%);
         color: @main;
-    }
-
-    &:hover {
-        background-color: transparent;
-        border-color: @white;
-        color: @white;
     }
 }
 
